@@ -37,7 +37,7 @@ private let infoColor    = "27,129,62"   // Green
 private let warningColor = "255,165,80"  // Orange
 private let errorColor   = "232,48,21"   // Red
 
-enum LoggerStyle {
+public enum LoggerStyle {
     case Finger
     case Triangle
     case Flower
@@ -72,7 +72,7 @@ public struct FunnyLogger {
     
     - parameter message: The message you would like logged.
     */
-    static func v<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func v<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(message, color: verboseColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -83,7 +83,7 @@ public struct FunnyLogger {
      - parameter style:	  The style of the symbol.
      - parameter message: The message you would like logged.
      */
-    static func v<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func v<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(style, object: message, color: verboseColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -95,7 +95,7 @@ public struct FunnyLogger {
     
     - parameter message: The message you would like logged.
     */
-    static func d<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func d<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(message, color: debugColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -106,7 +106,7 @@ public struct FunnyLogger {
      - parameter style:	  The style of the symbol.
      - parameter message: The message you would like logged.
      */
-    static func d<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func d<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(style, object: message, color: debugColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -118,7 +118,7 @@ public struct FunnyLogger {
     
     - parameter message: The message you would like logged.
     */
-    static func i<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func i<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(message, color: infoColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -129,7 +129,7 @@ public struct FunnyLogger {
      - parameter style:	  The style of the symbol.
      - parameter message: The message you would like logged.
      */
-    static func i<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func i<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(style, object: message, color: infoColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -141,7 +141,7 @@ public struct FunnyLogger {
     
     - parameter message: The message you would like logged.
     */
-    static func w<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func w<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(message, color: warningColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -152,7 +152,7 @@ public struct FunnyLogger {
      - parameter style:	  The style of the symbol.
      - parameter message: The message you would like logged.
      */
-    static func w<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func w<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(style, object: message, color: warningColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -164,7 +164,7 @@ public struct FunnyLogger {
     
     - parameter message: The message you would like logged.
     */
-    static func e<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func e<T>(message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(message, color: errorColor, functionName: functionName, filePath: filePath, line: line)
     }
@@ -175,7 +175,7 @@ public struct FunnyLogger {
      - parameter style:	  The style of the symbol.
      - parameter message: The message you would like logged.
      */
-    static func e<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
+    public static func e<T>(style: LoggerStyle, message: T, filePath: String = __FILE__, functionName: String = __FUNCTION__, line: Int = __LINE__) {
         
         log(style, object: message, color: errorColor, functionName: functionName, filePath: filePath, line: line)
     }

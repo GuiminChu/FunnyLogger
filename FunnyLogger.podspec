@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                      = "FunnyLogger"
-  s.version                   = "0.1.0"
+  s.version                   = "0.1.1"
   s.summary                   = "A logger for Xcode by Swift."
   s.homepage                  = "https://github.com/GuiminChu/FunnyLogger"
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target 		= "9.0"
   s.osx.deployment_target 		= "10.9"
 
-  s.source                    = { :git => "https://github.com/GuiminChu/FunnyLogger.git", :tag => "0.1.0" }
+  s.source                    = { :git => "https://github.com/GuiminChu/FunnyLogger.git", :tag => "0.1.1" }
   s.source_files              = "FunnyLogger.swift"
 
   s.requires_arc              = true
