@@ -8,6 +8,10 @@
 
 A simple, colorful logger for Xcode.
 
+![Screenshot](https://github.com/GuiminChu/FunnyLogger/blob/master/Console.png)
+
+![Screenshot](https://github.com/GuiminChu/FunnyLogger/blob/master/LoggerScreenshot.gif)
+
 ## Requirements
 
 * You need to install [**XcodeColors**](https://github.com/robbiehanson/XcodeColors) plugin to enable color in the Xcode console, otherwise you will see some messed-up code.
