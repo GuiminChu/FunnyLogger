@@ -33,6 +33,27 @@ Clone the repo and add `FunnyLogger.swift` to your project.
 
 ## Usage
 
+First:
+
+```swift
+import FunnyLogger
+```
+And, Use directly:
+
+```swift
+FunnyLogger.v("Normal")
+FunnyLogger.d("Normal")
+FunnyLogger.i("Normal")
+FunnyLogger.w("Normal")
+FunnyLogger.e("Normal")
+        
+FunnyLogger.v(.Flower, message: "Flower")
+FunnyLogger.d(.Flower, message: "Flower")
+FunnyLogger.i(.Flower, message: "Flower")
+FunnyLogger.w(.Flower, message: "Flower")
+FunnyLogger.e(.Flower, message: "Flower")
+```
+
 ## License
 
-ShrinkPresentation is released under the MIT license. See LICENSE for details.
+FunnyLogger is released under the MIT license. See LICENSE for details.
