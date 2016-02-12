@@ -23,7 +23,7 @@ A simple, colorful logger for Xcode.
 ## Installation
 
 #### CocoaPods
-You can use [Cocoapods](http://cocoapods.org/) to install `FunnyLogger`by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install `FunnyLogger`by adding it to your `Podfile`:
 
 ```ruby
 target 'MyApp' do
